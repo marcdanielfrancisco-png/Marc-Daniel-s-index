@@ -1,0 +1,31 @@
+<section>
+    <body>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="upload-quiz.html">Upload Quiz</a></li>
+                <li><a href="upload-lab.html">Upload Lab Work</a></li>
+            </ul>
+        </nav>
+        <h2>Upload Major Exam</h2>
+        <form onsubmit="saveData(event, 'Major Work')">
+
+            <div class="form-group">
+                <label>Exam Title</label>
+                <input type="text" placeholder="e.g., Final Exam">
+            </div>
+            <div class="form-group">
+                <label>Exam File</label>
+                <input type="file">
+            </div>
+            <div class="form-group">
+                <label>Proof Image</label>
+                <input type="file" accept="image/*">
+            </div>
+            <button type="submit">Submit Exam</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</section>

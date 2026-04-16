@@ -1,0 +1,32 @@
+
+<section>
+    <body>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="upload-quiz.html">Upload Quiz</a></li>
+                <li><a href="upload-exam.html">Upload Major Exam</a></li>
+            </ul>
+        </nav>
+        <h2>Upload Lab Work</h2>
+        <form onsubmit="saveData(event, 'Lab Work')">
+
+            <div class="form-group">
+                <label>Lab Description</label>
+                <input type="text" placeholder="Describe the lab activity">
+            </div>
+            <div class="form-group">
+                <label>Lab File</label>
+                <input type="file">
+            </div>
+            <div class="form-group">
+                <label>Image Proof</label>
+                <input type="file" accept="image/*">
+            </div>
+            <button type="submit">Submit Lab Work</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</section>
